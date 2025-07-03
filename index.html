@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework_7</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form action="#" method="post" class="form">
+			<label for="fullname">Повне ім’я:</label>
+			<input type="text" id="fullname" name="fullname" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Пароль:</label>
+			<input type="password" id="password" name="password">
+			<label for="confirm_password">Підтвердження пароля:</label>
+			<input type="password" id="confirm_password" name="confirm_password">
+			<div class="gender">
+				<label>Стать:</label>
+				<input type="radio" id="male" name="gender" value="male" required>
+				<label for="male">Чоловіча</label>
+				<input type="radio" id="female" name="gender" value="female" required>
+				<label for="female">Жіноча</label>
+			</div>
+			<label for="age">Вік:</label>
+			<input type="number" id="age" name="age" required>
+			<label for="course">Курс:</label>
+			<select id="course" name="course" required>
+				<option value="" disabled selected>Оберіть курс</option>
+				<option value="Front-End">Front-End</option>
+				<option value="Back-End">Back-End</option>
+				<option value="Project Management">Project Management</option>
+				<option value="QA Manual">QA Manual</option>
+			</select>
+			<label for="address">Повна адреса проживання:</label>
+			<textarea id="address" name="address" required></textarea>
+			<div class="checkbox">
+				<input type="checkbox" id="privacy" name="privacy" required>
+				<label for="privacy">Я погоджуюсь з умовами конфіденційності</label>
+			</div>
+			<div class="btn">
+				<button type="reset" id="reset__btn">Скидання</button>
+				<button type="submit" id="submit__btn">Зареєструватись</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
